@@ -1,0 +1,17 @@
+.main-layout-spacer {
+  flex: 1 1 auto;
+}
+
+.main-layout-icon {
+  color: #005cbb;
+}
+
+.arrow-icon {
+  font-size: 18px;
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+}

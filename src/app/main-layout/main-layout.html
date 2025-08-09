@@ -1,0 +1,72 @@
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="belowParameters" #menuParametersTrigger="matMenuTrigger">
+    Parámetros
+    <mat-icon
+      class="arrow-icon"
+      [class.rotated]="menuParametersTrigger.menuOpen">
+      keyboard_arrow_down
+    </mat-icon>
+  </button>
+  <mat-menu #belowParameters="matMenu" yPosition="below">
+    <button
+      mat-menu-item
+      routerLink="/quotes/search"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      Franquicias
+    </button>
+    <button
+      mat-menu-item
+      routerLink="/quotes/new"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      Días descanso
+    </button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="belowShifts" #menuShiftsTrigger="matMenuTrigger">
+    Turnos
+    <mat-icon
+      class="arrow-icon"
+      [class.rotated]="menuShiftsTrigger.menuOpen">
+      keyboard_arrow_down
+    </mat-icon>
+  </button>
+  <mat-menu #belowShifts="matMenu" yPosition="below">
+    <button
+      mat-menu-item
+      routerLink="/quotes/search"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }">Horarios
+    </button>
+    <button
+      mat-menu-item
+      routerLink="/quotes/new"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }">Periodos
+    </button>
+  </mat-menu>
+  <button mat-button>Empleados</button>
+  <span class="main-layout-spacer"></span>
+  <button matIconButton class="main-layout-icon" aria-label="Notificaciones">
+    <mat-icon>notifications</mat-icon>
+  </button>
+  <button matIconButton class="main-layout-icon" aria-label="Cuenta" [matMenuTriggerFor]="belowAccount">
+    <mat-icon>person</mat-icon>
+  </button>
+  <mat-menu #belowAccount="matMenu" yPosition="below">
+    <button
+      mat-menu-item
+      routerLink="/quotes/search"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      Información de la cuenta
+    </button>
+    <button
+      mat-menu-item
+      routerLink="/quotes/new"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      Cerrar sesión
+    </button>
+  </mat-menu>
+</mat-toolbar>
