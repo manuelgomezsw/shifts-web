@@ -4,7 +4,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatFormField, MatInput, MatLabel} from '@angular/material/input';
 import {MatButton} from '@angular/material/button';
 import {MatCard, MatCardContent, MatCardFooter} from '@angular/material/card';
-import {MatOption, MatSelect} from '@angular/material/select';
+import {RouterLink} from '@angular/router';
+import {StatusSelectComponent} from '../../../../shared/status-select/status-select';
 
 @Component({
   selector: 'app-form',
@@ -18,8 +19,8 @@ import {MatOption, MatSelect} from '@angular/material/select';
     MatCard,
     MatCardContent,
     MatCardFooter,
-    MatSelect,
-    MatOption
+    RouterLink,
+    StatusSelectComponent
   ],
   templateUrl: './form.html',
   styleUrl: './form.css'

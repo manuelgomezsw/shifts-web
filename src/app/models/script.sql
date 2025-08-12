@@ -39,8 +39,8 @@ CREATE TABLE stores (
                       id INT AUTO_INCREMENT PRIMARY KEY,
                       franchise_id INT NOT NULL,
                       name VARCHAR(100) NOT NULL,
+                      location VARCHAR(255),
                       address VARCHAR(255),
-                      phone VARCHAR(50),
                       active BOOLEAN DEFAULT TRUE,
                       CONSTRAINT fk_store_franchise FOREIGN KEY (franchise_id) REFERENCES franchises(id)
 );

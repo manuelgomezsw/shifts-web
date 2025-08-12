@@ -1,18 +1,1 @@
-.create-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-  color: #1976d2; /* color primario */
-  font-weight: 500;
-  font-size: 15px;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-  margin-bottom: 16px;
-}
 
-.create-link:hover {
-  color: #0d47a1; /* azul más oscuro */
-  text-decoration: underline;
-  text-underline-offset: 4px; /* más separado del texto */
-}
