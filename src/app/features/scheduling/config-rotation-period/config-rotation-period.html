@@ -1,0 +1,42 @@
+<div class="main-form">
+  <mat-card class="main-form-card" appearance="outlined">
+    <mat-card-content>
+      <mat-card-title class="form-section-title">Configuración del periodo</mat-card-title>
+      <form class="main-form-input">
+        <div class="form-row form-row--3">
+          <mat-form-field appearance="outline">
+            <mat-label>Franquicia</mat-label>
+            <mat-select>
+              <mat-option value="1">Urbania</mat-option>
+              <mat-option value="2">Madelo</mat-option>
+              <mat-option value="3">Mimos</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Punto de venta</mat-label>
+            <mat-select>
+              <mat-option value="2222">Jardines Llanogrande</mat-option>
+              <mat-option value="444">San Nicolas</mat-option>
+              <mat-option value="111">Vayúh</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Rotación de turnos</mat-label>
+            <mat-select>
+              <mat-option value="weekly">Semanal</mat-option>
+              <mat-option value="biweekly">Quincenal</mat-option>
+              <mat-option value="monthly">Mensual</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-footer class="main-form-footer main-form-footer--right">
+      <button mat-flat-button type="button" color="primary">
+        {{ 'GUARDAR' }}
+      </button>
+    </mat-card-footer>
+  </mat-card>
+</div>

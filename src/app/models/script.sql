@@ -97,3 +97,12 @@ CREATE TABLE absences (
                         reason VARCHAR(255),
                         CONSTRAINT fk_absence_employee FOREIGN KEY (employee_id) REFERENCES employees(id)
 );
+
+-- 10. Periodos de rotación
+CREATE TABLE rotation_periods (
+                                id INT AUTO_INCREMENT PRIMARY KEY,
+                                name VARCHAR(50) NOT NULL,         -- ej. 'Weekly', 'Biweekly', 'Monthly'
+                                code VARCHAR(20) UNIQUE NOT NULL   -- ej. 'weekly', 'biweekly', 'monthly'
+);
+ALTER TABLE stores ADD COLUMN rotation_period_id INT;
+ALTER TABLE stores ADD CONSTRAINT fk_rotation FOREIGN KEY (rotation_period_id) REFERENCES rotation_periods(id);

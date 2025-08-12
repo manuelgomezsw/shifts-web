@@ -27,8 +27,10 @@
             "styles": [
               "src/custom-theme.scss",
               "src/styles.css",
-              "src/styles/table-theme.css",
-              "src/styles/main-form-theme.css"
+              "src/styles/main-form-theme.css",
+              "src/styles/main-form-footer.css",
+              "src/styles/main-form-row.css",
+              "src/styles/table-theme.css"
             ]
           },
           "configurations": {

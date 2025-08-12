@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConfigPayPeriods } from './config-pay-periods';
+import { ConfigRotationPeriod } from './config-rotation-period';
 
-describe('ConfigPayPeriods', () => {
-  let component: ConfigPayPeriods;
-  let fixture: ComponentFixture<ConfigPayPeriods>;
+describe('ConfigRotationPeriod', () => {
+  let component: ConfigRotationPeriod;
+  let fixture: ComponentFixture<ConfigRotationPeriod>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ConfigPayPeriods]
+      imports: [ConfigRotationPeriod]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ConfigPayPeriods);
+    fixture = TestBed.createComponent(ConfigRotationPeriod);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
