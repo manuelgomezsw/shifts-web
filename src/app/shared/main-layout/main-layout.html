@@ -8,17 +8,17 @@
     </mat-icon>
   </button>
   <mat-menu #belowParameters="matMenu" yPosition="below">
-    <button mat-menu-item routerLink="/admin/franchises" routerLinkActive="active">
+    <button mat-menu-item routerLink="/admin/franchises">
       Franquicias
     </button>
-    <button mat-menu-item routerLink="/admin/stores" routerLinkActive="router-link-active">
+    <button mat-menu-item routerLink="/admin/stores">
       Puntos de venta
     </button>
-    <button mat-menu-item routerLink="/quotes/new" routerLinkActive="router-link-active">
+    <button mat-menu-item routerLink="/quotes/new">
       Variables de entorno
     </button>
   </mat-menu>
-  <button mat-button>Empleados</button>
+  <button mat-button routerLink="/employees">Empleados</button>
   <button mat-button [matMenuTriggerFor]="belowShifts" #menuShiftsTrigger="matMenuTrigger">
     Turnos
     <mat-icon

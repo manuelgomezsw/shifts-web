@@ -1,21 +1,15 @@
-<app-form-header entityName="Puntos de venta"></app-form-header>
+<app-form-header entityName="Empleados"></app-form-header>
 
-<a class="create-link" [routerLink]="['/admin/stores/new']">
-  Nuevo punto de venta
+<a class="create-link" [routerLink]="['/employees/new']">
+  Nuevo empleado
 </a>
 <mat-table class="mat-mdc-table mat-mdc-table-responsive">
-  <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+  <ng-container matColumnDef="firstName">
+    <mat-header-cell *matHeaderCellDef>Nombres</mat-header-cell>
     <mat-cell *matCellDef="let f">{{ f.name }}</mat-cell>
   </ng-container>
-  <ng-container matColumnDef="location">
-    <mat-header-cell *matHeaderCellDef>Ubicación</mat-header-cell>
-    <mat-cell *matCellDef="let f">
-      <mat-icon color="primary">{{ f.active ? 'check_circle' : 'cancel' }}</mat-icon>
-    </mat-cell>
-  </ng-container>
-  <ng-container matColumnDef="address">
-    <mat-header-cell *matHeaderCellDef>Dirección</mat-header-cell>
+  <ng-container matColumnDef="lastName">
+    <mat-header-cell *matHeaderCellDef>Apellidos</mat-header-cell>
     <mat-cell *matCellDef="let f">
       <mat-icon color="primary">{{ f.active ? 'check_circle' : 'cancel' }}</mat-icon>
     </mat-cell>

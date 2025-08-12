@@ -1,13 +1,13 @@
 import {Component, signal} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {MainLayout} from './shared/main-layout/main-layout';
+import {MainLayoutComponent} from './shared/main-layout/main-layout';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MainLayout],
+  imports: [RouterOutlet, MainLayoutComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('shifts-web');
+  protected readonly title = signal('GJ Invest');
 }

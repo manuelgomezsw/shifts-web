@@ -1,0 +1,15 @@
+.main-form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}

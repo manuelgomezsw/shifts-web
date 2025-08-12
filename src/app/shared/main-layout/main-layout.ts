@@ -23,6 +23,6 @@ import {MatDivider} from '@angular/material/divider';
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css'
 })
-export class MainLayout {
+export class MainLayoutComponent {
 
 }
