@@ -1,1 +1,13 @@
-<p>shift-planning works!</p>
+<app-month-navigation
+  [hoveredEmployee]="hoveredEmployee"
+  (hoverChange)="setHovered($event)">
+</app-month-navigation>
+
+<app-shift-table [rotation]="'biweekly'" [data]="shiftData"></app-shift-table>
+
+<br /><br />
+
+<app-hours-calculation
+  [hoveredEmployee]="hoveredEmployee"
+  (hoverChange)="setHovered($event)">
+</app-hours-calculation>

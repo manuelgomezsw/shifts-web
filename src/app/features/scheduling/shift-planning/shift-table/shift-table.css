@@ -1,0 +1,8 @@
+mat-row.hovered,
+tr.hovered {
+  background-color: #e3f2fd;
+}
+
+mat-row {
+  transition: background-color 0.2s ease-in-out;
+}

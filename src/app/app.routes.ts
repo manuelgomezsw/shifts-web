@@ -18,5 +18,9 @@ export const routes: Routes = [
   {
     path: 'employees',
     loadChildren: () => import('./features/employees/employee.routes').then((e) => e.employeeRoutes)
+  },
+  {
+    path: 'scheduling',
+    loadChildren: () => import('./features/scheduling/scheduling.routes').then((m) => m.schedulingRoutes)
   }
 ];
